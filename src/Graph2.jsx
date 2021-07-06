@@ -4,13 +4,13 @@ import { Bar } from "react-chartjs-2";
 function Graph2() {
   const data = {
     labels: [
-      "Пешеходько Альерт Иванов",
-      "Пешеходько Альерт Иванов",
-      "Пешеходько Альерт Иванов",
+      "Пешеходько Альберт Иванов",
+      "Пешеходько Альберт Иванов",
+      "Пешеходько Альберт Иванов",
     ],
     datasets: [
       {
-        label: "Dataset 1",
+        label: "",
         data: [5, 1, 2],
         borderColor: "blue",
         backgroundColor: "blue",
@@ -19,7 +19,7 @@ function Graph2() {
         maxBarThickness: 200,
       },
       {
-        label: "Dataset 2",
+        label: "",
         data: [5, 1, 3],
         borderColor: "green",
         backgroundColor: "green",

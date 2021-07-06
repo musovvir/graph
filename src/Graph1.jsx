@@ -3,22 +3,24 @@ import { Bar } from "react-chartjs-2";
 
 function Graph1() {
   const data = {
+    height: 1000,
+    type: "bar",
     labels: ["", "", "", ""],
     datasets: [
       {
-        data: [0, 20000, 20000, 5000],
+        data: [0, 15000, 25000, 15000],
         label: "1",
         backgroundColor: ["red"],
         maxBarThickness: 100,
       },
       {
-        data: [40000, 20000, 10000, 5000],
+        data: [15000, 6000, 12000, 6000],
         label: "2",
         backgroundColor: ["green"],
         maxBarThickness: 100,
       },
       {
-        data: [40000, 20000, 20000],
+        data: [6000, 20000, 40000],
         label: "3",
         backgroundColor: ["blue"],
         maxBarThickness: 100,
@@ -26,7 +28,7 @@ function Graph1() {
     ],
   };
   const options = {
-    type: "line",
+    type: "bar",
     responsive: true,
     plugins: {
       legend: {
@@ -34,7 +36,6 @@ function Graph1() {
       },
       title: {
         display: true,
-        text: "Финансовый отчёт",
       },
     },
     scales: {
